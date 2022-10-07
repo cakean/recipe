@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+    background-color: rgba(122, 191, 191, .5)
+}
+
+body {
+    background-color: #F2F2F2;
+    margin: 0 auto;
+    width: 414px;
+    transition: width .5s;
+}
+
+header {
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0px;
+    width: 414px;
+    z-index: 1;
+    height: 125px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+#dropdown {
+    position: relative;
+}
+
+#home {
+    position: fixed;
+}
+
+#tacos {
+    width: 414px;
+}
+
+
+nav li {
+    color: #EB5428;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    display: block;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+nav li:hover {
+    background-color: #EB5428;
+    color: #FFFFFF;
+}
+
+li {
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+#ingredients {
+    line-height: 30px;
+}
+
+div input {
+    display: inline;
+    height: 40px;border: 3px solid #EB5428;
+    padding: 5px;
+    background-color: #FFFFFF;
+    width: 250px;
+}
+
+nav ul {
+    max-height: 0;
+    overflow: hidden;
+}
+
+input:checked ~ ul {
+    max-height: 500px;
+}
+
+input {
+    display: none;
+}
+
+#search {
+    position: absolute;
+    top: 100px;
+}
+
+button {
+    background-color: #EB5428;
+}
+
+menu {
+    list-style: none;
+    color: #EB5428;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+figcaption {
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    color: #EB5428;
+}
+
+h1 {
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    color: #0D0D0D;
+    text-align: center;
+    padding-top: 150px;
+}
+
+h2 {
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    color: #0D0D0D;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    color: #0D0D0D;
+}
+
+p, dd {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #0D0D0D;
+}
+
+dt {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 16px;
+    color: #0D0D0D;
+}
+
+ul {
+    list-style-type: square;
+}
+
+#description {
+    margin: 10px;
+}
+
+#details {
+    margin: 10px;
+}
+
+#sides {
+    background-color: #7ABFBF;
+    padding-left: 15px;
+}
+
+#sides p + p {
+    font-weight: bold;
+}
+
+#sides img {
+    width: 100px;
+}
+
+#social {
+    width: 414px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#social figure {
+    margin: 0 auto;
+}
+
+#cheesington {
+    width: 200px;
+    position: relative;
+    left: 105px;
+    bottom: 10px;
+}
+
+footer p {
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        width: 768px;
+        margin: 0 auto;
+        transition: width .5s;
+    }
+
+    header {
+        width: 768px;
+    }
+
+    h1 {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #tacos {
+        width: 768px;
+    }
+
+    menu {
+        width: 768px;
+        background-color: rgba(0, 0, 0, .50);
+        position: absolute;
+        justify-content: space-around;
+        top: 240px;
+    }
+
+    #dropdown {
+        visibility: hidden;
+    }
+
+    nav {
+        width: 768px;
+    }
+
+    nav ul {
+        overflow: visible;
+        display: flex;
+        align-items: center;
+    }
+
+    nav img {
+        width: 50px;
+    }
+
+    #bfast, #brunch, #lunch, #din, #apps, #desserts, #bevs {
+        visibility: visible;
+        display: flex;
+    }
+
+    #details {
+        text-align: center;
+    }
+
+    #social {
+        transform: translateX(350px)
+    }
+
+    #cheesington {
+        transform: translateX(-50px);
+    }
+
+    footer p {
+        transform: translateX(-225px);
+    }
+}
+
+@media screen and (min-width:1280px) {
+    body {
+        width: 1280px;
+        margin: 0 auto;
+        transition: width .5s;
+    }
+
+    header {
+        width:1280px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #tacos {
+        width: 40%;
+        margin-left: 100px;
+    }
+
+    menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #FFFFFF;
+        border: 2px solid #EB5428;
+        width: 60px;
+        height: 710px;
+        align-content: center;
+    }
+
+    #search {
+        left: 650px;
+    }
+
+    #details {
+        background-color: #0D0D0D;
+        color: #7ABFBF;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    #social {
+        transform: translateX(850px);
+    }
+
+    footer p {
+        transform: translateX(-350px);
+        transform: translateY(300);
+    }
+}
