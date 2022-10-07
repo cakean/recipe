@@ -295,7 +295,6 @@ footer p {
     }
 
     #details {
-        background-color: #0D0D0D;
         color: #7ABFBF;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
